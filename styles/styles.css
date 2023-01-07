@@ -22,13 +22,12 @@ body {
   letter-spacing: 3%;
 }
 .container {
-  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .page-header {
   display: flex;
   align-items: center;
-  width: 1200px;
-  margin: 0 auto;
 }
 .logo {
   text-decoration: none;
@@ -37,7 +36,6 @@ body {
   font-family: Raleway;
   font-size: 26px;
   line-height: 1, 17;
-  padding-left: 215px;
   margin-right: 93px;
 }
 .web-logo {
@@ -51,6 +49,10 @@ body {
 .unstyled-list {
   list-style-type: none;
 }
+
+.nav-list-item {
+  display: inline-block;
+}
 .contact-list {
   list-style-type: none;
   margin-left: auto;
@@ -58,9 +60,7 @@ body {
 .contact-list-item {
   display: inline-block;
 }
-.nav-list-item {
-  display: inline-block;
-}
+
 .link {
   text-decoration: none;
   color: var(--paragraph-color);
@@ -91,10 +91,8 @@ body {
 }
 .heading-section {
   background-color: var(--bg-color);
-  width: 1200px;
   display: flex;
   align-items: center;
-  margin: 0 auto;
   flex-direction: column;
   padding: 200px 0;
 }
@@ -104,6 +102,7 @@ body {
   font-size: 44px;
   line-height: 1.36;
   display: inline-block;
+  margin-bottom: 30px;
 }
 .request-button {
   color: var(--white-color);
@@ -113,7 +112,6 @@ body {
   background-color: var(--brand-color);
   border-radius: 4px;
   display: inline-block;
-  margin-top: 30px;
 }
 .request-button:hover,
 .request-button:active,
@@ -122,8 +120,6 @@ body {
   cursor: pointer;
 }
 .working-item {
-  width: 1200px;
-  margin: 0 auto;
   padding: 94px 0;
 }
 .working-list {
@@ -137,12 +133,12 @@ body {
   font-size: 14px;
   line-height: 1.14;
   display: inline-block;
-  margin-bottom: 10px;
 }
 .dataitem {
   color: var(--paragraph-color);
   font-size: 14px;
   line-height: 1.71;
+  margin-top: 10px;
 }
 .section-heading {
   color: var(--writing-color);
@@ -153,8 +149,6 @@ body {
   margin-bottom: 50px;
 }
 .our-team {
-  width: 1200px;
-  margin: 0 auto;
   padding: 94px 0;
   background-color: var(--team-color);
 }
@@ -167,12 +161,9 @@ body {
   display: inline-block;
   box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2), 1px 0px 1px rgba(0, 0, 0, 0.14),
     3px 0px 1px rgba(0, 0, 0, 0.12);
-  width: 270px;
   text-align: center;
 }
 .image-section {
-  width: 1200px;
-  margin: 0 auto;
   padding: 94px 0;
 }
 .images {
@@ -197,8 +188,6 @@ body {
   line-height: 1.17;
 }
 .address-section {
-  width: 1200px;
-  margin: 0 auto;
   background-color: var(--bg-color);
   padding: 60px 0;
   text-align: left;
@@ -240,6 +229,7 @@ body {
   font-style: normal;
   font-size: 26px;
   line-height: 1.38;
+  margin-bottom: 28px;
 }
 
 .web-logo-footer {
@@ -283,8 +273,6 @@ body {
 
 .main-nav {
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
   justify-content: center;
 }
 .main-nav-item {
@@ -293,8 +281,6 @@ body {
 }
 .product-section {
   background-color: #f5f4fa;
-  width: 1200px;
-  margin: 0 auto;
   padding: 56px 0 94px 0;
 }
 .product-list {
@@ -320,4 +306,7 @@ body {
 .subtitle {
   border: 1px solid #eeee;
   padding-left: 24px;
+}
+.page-header.portofolio {
+  border-bottom: #f5f4fa;
 }
